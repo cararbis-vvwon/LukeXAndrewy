@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>My Image Carousel</title> 
+ 
+<style> 
+ 
+    body { 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center; 
+        background-image: url('REDRED.jpg');
+    } 
+ 
+    h1 { 
+        color: #3b010f;
+    } 
+ 
+    img { 
+        width: 500px; 
+        height: 300px; 
+        border: 5px solid white; 
+        border-radius: 15px; 
+        transition: 0.5s; 
+        filter: none; 
+    } 
+ 
+   
+    img:hover { 
+        transform: scale(1.05); 
+    } 
+ 
+    button { 
+        padding: 10px 20px; 
+        margin: 5px; 
+        cursor: pointer; 
+        background-color: black;
+        color: white; 
+        border: none; 
+        border-radius: 5px; 
+    } 
+ 
+    button:hover { 
+        background-color: #800020
+    } 
+ 
+</style> 
+ 
+</head> 
+ 
+<body> 
+ 
+<script> 
+ 
+document.writeln("<h1>MY IMAGE CAROUSEL</h1>"); 
+ 
+document.writeln("<img id='gallery' src='lf16.jpg' alt='Image Gallery'>");
+ 
+document.writeln("<br><br>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('gallery').src='TOMMYYYY.jpg'\">IMAGE 1</button>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('gallery').src='tomtom.jpg'\">IMAGE 2</button>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('gallery').src='tommy.jpg'\">IMAGE 3</button>");
+
+document.writeln("<button onclick=\"document.getElementById('gallery').src='DRINKDRINK.jpg'\">IMAGE 4</button>");
+ 
+document.writeln("<br><br>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('gallery').style.filter='blur(5px)'\">BLUR</button>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('gallery').style.filter='grayscale(100%)'\">GRAYSCALE</button>"); 
+
+document.writeln("<button onclick=\"document.getElementById('gallery').style.filter='brightness(150%)'\">BRIGHTNESS</button>"); 
+
+document.writeln("<button onclick=\"document.getElementById('gallery').style.filter='sepia(100%)'\">SEPIA</button>"); 
+
+document.writeln("<button onclick=\"document.getElementById('gallery').style.filter='none'\">NORMAL</button>"); 
+</script> 
+</body> 
+</html> 
